@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>BUGA</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='style.css'>
+    <meta name="description" content="bitcoin exchange and web2 investment buy and sell coins"/>
+    <script src='main.js'></script>
+</head> 
+<body>
+    <header class="site-header">
+        <div class="brand">
+        <div class="logo">EBK</div>
+        <div class="brand text">
+            <div class="brand-title">Bit & Web2 investment</div>
+            <div class="brand-sub">EBK investment dashboard</div>
+            </div>
+        </div>
+
+        <!--link needed hedre-->
+        <nav class="main-nav" aria-label="main navigation">
+            <a href="#">cominbac</a>
+            <a href="#">calculato</a>
+            <a href="signup">signup</a>
+        </nav>
+        </header>
+
+        <main class="container">
+            <section class="grid">
+                <div class="main-column">
+                    <article class="hero card" aria-labelledby="hero-heading">
+                        <div class="hero-top">
+                            <div>
+                                <h1 id="hero-heading">invest in Bitcoin and Web2 startups - simple and easy</h1>
+                                <p class="lead">compare crypto (Bitcoin) investment flows with traditional Web startupb (Web2) opportunities. this is a great deal for investors and a well fianacial opportunities</p>
+                                </div>
+
+                                <div class="controls">
+                                    <div class="switch" role="tablist" aria-label="investment type">
+                                        <button class="tab active"
+                                        data-target="btc-panel" type="botton">Bitcoin</button>
+                                         
+                                        <button class="tab" data-target="web2-panel" type="button">Web2</button>
+                                        </div>
+
+                                        <div id="btc-panel" class="panel">
+                                            <div class="stats">
+                                                <div class="stat">
+                                                    <div class="muted">BTC Price</div>
+                                                     
+                                                    <div class="stat-value"  id="btc-price">$62,431.00</div>
+                                                    </div>
+                                                    
+                                                    <div class="stat">
+                                                        <div class="muted">24h change</div>
+                                                        <div class="stat-value" id="btc-change"> +3.2%</div>
+                                                        </div>
+                                                        <div class="stat">
+                                                            <div class="muted">market sentiment</div>
+
+                                                            <div class="stat-value"  id="btc-sent">bullish</div>
+                                                            </div>
+                                                            </div>
+
+                                                            <div class="action">
+                                                                <button class="btn primary" type="button">Simulate Buy </button>
+                                                                <button class="btn secondary" type="button">Connect Wallet</button>
+                                                                </div>
+                                                                </div>
+
+                                                                <div id="web2-panel" class="panel" hidden>
+                                                                    <div class="muted">Featured Web2 opportunities</div>
+                                                                    <ul class="list">
+                                                                        <li><span>socialcommerce App - Seed</span><span class="muted">pre-Money $4m</span></li>
+                                                                        <li><span>Developer Tools SaaS-Series A</span><span class="muted">Pre-Money $24m</span></li>
+                                                                        <li><span>Fintech API-Pre-seed</span><span class="muted">Pre-Money $1.2m</span></li>
+                                                                    </ul>
+
+                                                                    <div class="actions">
+                                                                        <button class="btn primary" type="button">Express interest</button>
+                                                                        <button class="btn secondary" type="button">Request Deck</button>
+                                                                    </div>
+                                                                    </div>
+                                                                </article>
+
+                                                                <section id="calculator" class="card calculator" aria-labelledby="calc-heading"><h2 id="calc-heading"> investment calculator</h2>
+                                                                    <P class="muted">Estimate future value for BTC or Web2 equity (compound simple growth)</P>
+
+                                                                    <label for="type">Type</label>
+                                                                    <select id="type" name="type">
+                                                                        <option value="btc">Bitcoin</option>
+                                                                        <option value="web2">Web2 (equity)</option>
+                                                                    </select>
+
+                                                                    <label for="amount"> Amount to invest (USD)</label>
+                                                                    <input id="amount" name="amount" type="number" value="1000"/>
+
+
+                                                                    <label for="rate">Expected annual return (%)</label>
+                                                                    <input id="rate" name="rate" type="number" value="12"/>
+
+                                                                    <label for="years">Years</label>
+                                                                    <input id="years" name="years" type="number" value="3"/>
+
+                                                                    <div class="calc-actions">
+                                                                        <button class="btn primary" type="button">calculate</button>
+                                                                        <button class="btn secondary" type="button">Reset</button>
+                                                                    </div>
+
+                                                                    <div id="calc-result" class="result"  aria-live="polite"></div>
+                                                                    </section>
+
+                                                                    <section id="poryfolio"class="card portfolio" aria-labelledby="portfolio-heading">
+                                                                        <h2 id="portfolio-heading">your portfolio</h2>
+                                                                        <p class="muted">this is static sample data to show how a portfolio might look.</p>
+
+                                                                        <ul class="list">
+                                                                            <li><span>BTC-0.015</span><span>$936.47</span></li>
+                                                                            <li><span>Web2 Fund-Seed basket</span><span>$1,200.00</span></li>
+                                                                            <li><span>Cash</span><span>$863.53</span></li>
+                                                                        </ul>
+                                                                        </section>
+                                                                        </div>
+
+                                                                        <aside class="side-column">
+                                                                            <div class="card quick-actions" aria-labelledby="qa-heading">
+                                                                                <h3 id="qa-heading">Quick actions</h3>
+                                                                                <div class="action-list">
+                                                                                    <button class="btn primary" type="button">start investment </button>
+                                                                                    <button class="btn secondary" type="button">Export portfolio</button>
+                                                                                    <button class="btn secondary" type="button">sync market Data</button>
+                                                                                    </div>
+                                                                                    </div>
+
+
+                                                                                    <div class="card activity" aria-labelledby="activity-heading">
+                                                                                        <h3 id="activity-heading">Recent activity</h3>
+
+                                                                                        <ul class="list">
+                                                                                            <li><span>Bought BTC</span><span class="muted"> $500. 2d</span></li>
+                                                                                            <li><span>invested in web2 seed</span><span class="muted">$1,000 . 12d</span></li> 
+                                                                                            <li><span>Dividend</span><span class="muted">$12 . 22d</span></li>       
+                                                                                        </ul>
+                                                                                        </div>
+
+                                                                                        <div class="card sinup" arial-labelledby="sinup-heading">
+                                                                                            <h3 id="signup-heading">Join our waitlist</h3>
+
+                                                                                            <p class="muted">Real money is processed in this web EBK .BTC.</p>
+
+                                                                                            <label for="name">Full name</label>
+                                                                                            <input id="name" name="name" type="text" placeholder="Your name"/>
+                                                                                            <label for="email">Email</label>
+                                                                                            <input id="email" name="email" type="email" placeholder="you@email.com"/>
+
+                                                                                            <div class="signup-action">
+                                                                                                <button class="btn primary" type="button">Sign up</button>
+                                                                                                <button class="btn secondary" type="button">Clear</button>
+                                                                                                </div>
+                                                                                                </div>
+                                                                                                </aside>
+                                                                                                </section>
+                                                                                                </main>
+
+                                                                                                <footer class="site-footer">
+                                                                                                <div>Bit & WEb2  (EBK investments.)</div>
+                                                                                                </footer>
+                                                                                                
+</body>
+</html>
